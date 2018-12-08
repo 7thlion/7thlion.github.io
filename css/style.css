@@ -1,0 +1,460 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	color: #666;
+	line-height: 30px;
+	background: #303030 url(../images/g-bg.png) no-repeat top right;
+}
+
+h1 {
+	font-size: 48px;
+	color: #fff;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.logo {
+	width: 375px;
+	border-radius: 40px;
+	margin-left: -40px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+}
+
+/*Navigation Menu*/
+
+.main-menu {
+	float: right;
+	margin-top: -72px;
+	margin-right: 2%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+#main {
+  transition: margin-right .5s;
+  padding: 16px;
+}
+
+/*Hero banner*/
+
+.hero-section {
+	padding-top: 8.5rem;
+	padding-bottom: 12rem;
+}
+
+.hero-section h1 {
+	margin-bottom: 4rem;
+	text-shadow: 2px 2px 7px rgba(0,0,0,0.9);
+	position: relative;
+}
+
+.main-links a {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #200f5c;
+	display: block;
+	padding: 8px 20px 60px;
+}
+
+.main-links a:hover {
+	box-shadow: 0 0 10px 0px rgba(0,0,0,0.4);
+}
+
+.main-links a.ship-ico,
+.main-links a.track-ico,
+.main-links a.contact-ico {
+	background-position: center 45px;
+	background-repeat: no-repeat;
+}
+
+.main-links a.ship-ico {
+	background-image: url(../images/ship.png);
+	background-size: 35px;
+}
+
+.main-links a.track-ico {
+	background-image: url(../images/track.png);
+	background-size: 33px 42px;
+}
+
+.main-links a.contact-ico {
+	background-image: url(../images/contact.png);
+	background-size: 38px;
+}
+
+.home-trck {
+	padding: 15px 10px;
+	font-weight: 500;
+}
+
+.home-trck-btn {
+	display: block;
+	background-color: #4bae30;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+  padding: 15px 10px;
+  /*margin-right: 15px;*/
+}
+
+.home-trck-btn:hover {
+	background-color: #42972a;
+	color: #fff;
+}
+
+.shade {
+	box-shadow: 0 0 10px 0px rgba(0,0,0,0.4);	
+}
+
+/*Who we are section*/
+
+.who-v-r {
+	margin-bottom: 100px;
+}
+
+.who-v-r h2,
+.blog-sec h2 {
+	color: #1f0e54;
+}
+
+.who-v-r p {
+	font-size: 18px;
+	line-height: 30px;
+	/*padding-bottom: 20px;
+	margin-bottom: 35px;*/
+}
+
+.who-v-r .shade {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	z-index: 2;
+}
+
+.who-v-r .img-sec {
+	position: relative;
+	margin-left: -150px;
+	z-index: 1;
+	box-shadow: 0 0 10px 0px rgba(0,0,0,0.4);	
+}
+
+.who-v-r .img-sec img {
+	width: 100%;
+	max-width: 700px;
+	height: auto;
+}
+
+/*How we work section*/
+.we-do {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+.who-v-r p,
+.we-do p {
+	position: relative;
+}
+
+.who-v-r p:after,
+.we-do p:after {
+	content: "";
+	height: 3px;
+	width: 80px;
+	background-color: #4bae30;
+	position: absolute;
+	bottom: -20px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+}
+
+.who-v-r p:after {
+	right: inherit;
+}
+
+.airo {
+  position: fixed;
+  pointer-events: none;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
+  /*z-index: 1;*/
+  text-align: center;
+}
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
+}
+
+/*Featured Section*/
+
+.features {
+	background: url(../images/world.png) no-repeat center;
+	margin-bottom: 100px;
+}
+
+.f-card {
+	padding: 2% 4%;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px 0px rgba(0,0,0,0.4);	
+}
+
+.f-card h2 {
+	color: #200f5c;
+}
+
+.f-card p {
+	color: #2a2a2a;
+	line-height: 30px;
+	margin-bottom: 0;
+}
+
+.f-card.pickup {
+	background: url(../images/pickup.png) no-repeat center left;
+	background-size: auto 100%;
+}
+
+.f-card.custom-clearance {
+	background: url(../images/custom-clearance.png) no-repeat center right;
+  background-size: auto 100%;
+}
+
+.f-card.freight {
+	background: url(../images/freight.png) no-repeat center left;
+	background-size: auto 100%;
+}
+
+.f-card.delivery {
+	background: url(../images/delivery.png) no-repeat center right;
+	background-size: auto 100%;
+}
+
+/*Work Section*/
+.work {
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.work .title-lg {
+	font-size: 72px;
+	color: #fff;
+	font-weight: 700;
+	position: relative;
+}
+
+.work .title-lg:before {
+	content: '';
+	height: 1px;
+	width: 100%;
+	max-width: 650px;
+	background-color: #fff;
+	position: absolute;
+	top: 18%;
+	right: -105%;
+}
+
+.work .title-intro {
+	font-size: 23px;
+	color: #fff;
+	line-height: 38px;
+	font-weight: 400;
+}
+
+.work a {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.work a p {
+	font-size: 15px;
+	line-height: 25px;
+	color: #666;
+	margin-bottom: 0;
+}
+
+.work .wrk-img {
+	position: relative;
+}
+
+.work .wrk-img img {
+	width: 100%;
+	height: auto;
+}
+
+.work .wrk-img h2 {
+	position: absolute;
+	top: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.work span {
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 600;
+	color: #666;
+	display: block;
+	text-align: center;
+}
+
+/*Blog section*/
+.blog-sec {
+	margin-bottom: 80px;
+}
+
+.blog-sec img {
+	width: 100%;
+	height: auto;
+}
+
+.blog-sec .main-blogs {
+	margin-top: -65px;
+}
+
+.blog-sec .main-blogs .featured-blog,
+.blog-sec .main-blogs .related-blog {
+	font-family: 'Raleway', sans-serif;
+	display: block;
+}
+
+.blog-sec .main-blogs .related-blog {
+	height: 100%;
+	max-height: 560px;
+}
+
+.blog-sec .related-blog .content {
+	padding: 25px;
+}
+
+.blog-sec .featured-blog {
+	position: relative;
+}
+
+.blog-sec .featured-blog .content {
+	position: absolute;
+	bottom: 0;
+	padding: 28px;
+}
+
+.blog-sec .featured-blog h2 {
+	color: #fff;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.blog-sec .date {
+	display: block;
+	margin-bottom: 15px;
+	font-size: 14px;
+	color: #818181;
+	font-weight: 500;
+}
+
+.blog-sec .featured-blog .date {
+	margin-bottom: 10px;
+}
+
+.blog-sec .related-blog h3 {
+	text-transform: uppercase;
+	font-size: 22px;
+	line-height: 30px;
+	color: #1d1d1d;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+}
+
+.blog-sec .content .author {
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}
+
+/*Footer*/
+footer {
+	position: relative;
+}
+
+footer h4 {
+	font-size: 18px;
+	color: #353535;
+	font-weight: 600;
+}
+
+footer a,
+footer p {
+	font-size: 14px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
